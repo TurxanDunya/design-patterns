@@ -1,0 +1,20 @@
+WHAT IS ADAPTER?
+Simply adapts an object to another interface without changing behaviour.
+
+MORE...
+We have an existing object which provides the functionality that client needs.
+But, client code can't use this object because it expects an object with different interface.
+Using adapter design pattern, we make this existing object work with client by adapting the object
+    to client's expected interface.
+This pattern is also called as "Wrapper", as it "wraps" existing object.
+
+WHAT ABOUT, IF BOTH TARGET AND ADAPTEE CLASSES ARE CONCRETE?
+In such situations, object adapter is the only solution.
+
+IN REAL LIFE EXAMPLES:
+- InputStreamReader
+- OutputStreamReader
+
+PITFALLS:
+Class Adapter creates an object which exposes unrelated methods in part of your code, polluting it.
+Avoid class adapter, as mush as possible!

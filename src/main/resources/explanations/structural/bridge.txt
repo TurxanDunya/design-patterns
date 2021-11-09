@@ -1,0 +1,18 @@
+WHAT IS BRIDGE?
+Our implementations & abstractions are generally coupled to each other in normal inheritance.
+Using Bridge Pattern, we can decouple them, so they can both change without affecting each other.
+(Look at UML diagrams)
+We achieve this by creating two separate inheritance hierarchies:
+- one for implementation (for client)
+- another for abstraction (functionalities)
+We separate implementation classes from abstractions. We use composition to bridge these two hierarchies.
+
+REAL LIFE EXAMPLES:
+JDBC API - java.sql.DriverManager with the java.sql.Driver interface
+
+COMPARISON WITH ADAPTER
+While bridge is intending to allow abstraction and implementation to vary independently,
+adapter is meant to make unrelated classes work together.
+
+EXTERNAL LINKS:
+https://www.geeksforgeeks.org/bridge-design-pattern/

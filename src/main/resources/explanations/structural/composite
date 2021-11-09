@@ -1,0 +1,14 @@
+WHAT IS COMPOSITE?
+We have a parent-child or part-whole relationship or hierarchy of objects and
+we want to be able to treat all objects in this hierarchy uniformly.
+We can use composite pattern to simplify dealing with such object arrangements.
+
+Goal of composite pattern is to simplify the client code by allowing it to treat to composites and
+leaf nodes in same way.
+
+REAL LIFE EXAMPLES
+Composite is used in many UI frameworks, since it easily allows to represent a tree of UI controls.
+Because, some pages are looks similar with small differences.
+
+DIFFERENCE FROM DECORATOR
+While Composite deals with tree structure of objects, Decorator simply contains another (single) object.

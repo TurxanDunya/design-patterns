@@ -1,0 +1,17 @@
+WHAT IS DECORATOR?
+When we want to enhance behaviour of our existing object dynamically...
+Then we can use decorator design pattern.
+
+Decorator wraps an object within itself and provides same interface as the wrapped object.
+So, the client of original object doesn't need to change.
+A decorator provides alternative to subclassing for extending functionality of existing class.
+And it has same interface as the object it decorates or contains.
+
+BE CAREFUL:
+Pay attention to equals and hashCode methods of decorator. When using decorators, you have to decide
+if decorated object is equal to same instance without decorator.
+
+REAL LIFE EXAMPLES
+- Java's I/O package:
+For example, BufferedOutputStream class decorates any OutputStream object and add buffering to file
+writing operation. This improves the disk I/O performance by reducing number of writes.

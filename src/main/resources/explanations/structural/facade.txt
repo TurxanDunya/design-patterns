@@ -1,0 +1,11 @@
+WHAT IS FACADE?
+Client has to interact with a large number of interfaces and classes in a subsystem to get result.
+So client gets tightly coupled with those interfaces & classes. Facade solves this problem.
+
+HOW?
+Facade provides a simple and unified interface to a subsystem.
+Client interacts with just the facade now to get same result.
+
+DIFFERENCE FROM ADAPTER
+While Facade intent is to simplify the usage of subsystem for client code,
+Adapter is meant to adapt an object to different interface.
