@@ -1,0 +1,26 @@
+WHAT IS FLYWEIGHT?
+Flyweight lets you fit more objects into the available amount of RAM by sharing common parts of state
+between multiple objects instead of keeping all of the data in each object.
+In Flyweight pattern we use a HashMap that stores reference to the object which have already been created,
+every object is associated with a key. Now when a client wants to create an object,
+he simply has to pass a key associated with it and if the object has already been created
+we simply get the reference to that object else it creates a new object and then
+returns it reference to the client.
+
+1. INTRINSIC - constant data of an object. It lives within the object.
+Other objects can only read it, not change it. | Getting from pool using factory method.
+2. EXTRINSIC - altered “from the outside” by other objects. | Setting by client.
+
+We create objects with only intrinsic state and share them in multiple contexts.
+Client or user of object provides the extrinsic state to object to carry out its functionality.
+We provide a factory so client can get required flyweight objects based on some key to identify flyweight.
+
+REAL LIFE EXAMPLE
+Java uses flyweight pattern for Wrapper classes. valueOf() static method serves as the factory method.
+String pool which is maintained by JVM is also an example of flyweight. We can call the intern() method
+on a String object to explicitly request this String object to be interned. This method will returned a
+reference to already cached object if present or else will create new String in cache if not present.
+
+WHAT IS THE DIFFERENCE FROM OBJECT POOL?
+FLYWEIGHT - State of flyweight object is divided. Client must provide part of state to it.
+OBJECT POOL - A pooled object contains all of its state encapsulated within itself.

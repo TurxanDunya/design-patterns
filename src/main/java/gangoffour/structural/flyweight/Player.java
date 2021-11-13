@@ -3,9 +3,9 @@ package gangoffour.structural.flyweight;
 /**
  * Interface implemented by Flyweights
  */
-public interface ErrorMessage {
+public interface Player {
 
-    //Get error message
-    String getText(String code);
+    void assignWeapon(String weapon);
+    void mission();
 
 }
