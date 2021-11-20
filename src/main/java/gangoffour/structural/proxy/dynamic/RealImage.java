@@ -1,14 +1,16 @@
-package gangoffour.structural.proxy.virtual;
+package gangoffour.structural.proxy.dynamic;
+
+import gangoffour.structural.proxy.virtual.Image;
 
 import java.awt.geom.Point2D;
 
-public class BitmapImage implements Image {
+public class RealImage implements Image {
 
     private Point2D location;
     private String name;
 
-    public BitmapImage(String filename) {
-        //Loads image from file or disk
+    public RealImage(String filename) {
+        // Loads image from file or disk
         System.out.println("Loaded from disk: " + filename);
         name = filename;
     }
@@ -25,7 +27,8 @@ public class BitmapImage implements Image {
 
     @Override
     public void render() {
-        //renders to screen
+        // Renders to screen
         System.out.println("Rendered " + this.name);
     }
+
 }

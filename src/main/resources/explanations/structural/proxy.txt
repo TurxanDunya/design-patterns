@@ -1,0 +1,21 @@
+WHAT IS PROXY?
+Proxy lets you provide a substitute or placeholder for another object.
+A proxy controls access to the original object, allowing you to perform something either before or
+after the request gets through to the original object.
+
+WHY PROXY?
+Protection - Control access to original object's operations
+Remote - Provides a local representation of a remote object
+Virtual - Delays construction of original object until absolutely necessary
+Client is unaware of existence of proxy. Proxy performs its work transparently.
+
+REAL LIFE EXAMPLES
+Lazy loading of collections by hibernate, AOP based method level security,
+Spring uses to provide support for features like transactions, caching and general AOP support.
+
+DIFFERENCE FROM DECORATOR
+Depending on type of proxy, it doesn't need real object all the time.
+A decorator needs to have a real object for it to work.
+
+Also purposes are different: While proxy provides features like access control, lazy loading,
+auditing etc., decorator adds new functionality to existing functionality.
