@@ -1,12 +1,15 @@
 package gangoffour.structural.proxy.virtual;
 
+import java.awt.geom.Point2D;
+
 public class Client {
     public static void main(String[] args) {
-        Image img = ImageFactory.getImage("A1.bmp");
+        Image image = ImageFactory.getImage("img.bmp");
 
-//        img.setLocation(new Point2D(10, 10));
-        System.out.println("Image location :" + img.getLocation());
+        image.setLocation(new Point2D.Float(10, 10));
+        System.out.println("Image location :" + image.getLocation());
         System.out.println("rendering img now...");
-        img.render();
+
+        image.render();
     }
 }
