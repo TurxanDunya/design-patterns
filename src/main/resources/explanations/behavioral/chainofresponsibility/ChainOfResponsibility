@@ -1,0 +1,9 @@
+WHAT ARE BEHAVIORAL PATTERNS?
+Describe how classes and objects interact & communicate with each other
+
+WHAT IS CHAIN OF RESPONSIBILITY?
+Lets you pass requests along a chain of handlers. Upon receiving a request,
+each handler decides either to process the request or to pass it to the next handler in the chain.
+
+REAL LIFE EXAMPLES
+Servlet, Security Filter etc.

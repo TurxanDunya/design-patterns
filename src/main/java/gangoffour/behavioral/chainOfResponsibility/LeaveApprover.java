@@ -1,7 +1,7 @@
 package gangoffour.behavioral.chainOfResponsibility;
 
 /**
- * This represents a handler in chain of responsibility
+ * This represents a handler in chain of responsibility.
  */
 public interface LeaveApprover {
 
