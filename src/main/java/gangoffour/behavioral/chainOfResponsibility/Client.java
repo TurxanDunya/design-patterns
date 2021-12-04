@@ -18,7 +18,6 @@ public class Client {
     private static LeaveApprover createChain() {
         Director director = new Director(null);
         Manager manager = new Manager(director);
-        ProjectLead projectLead = new ProjectLead(manager);
-        return projectLead;
+        return new ProjectLead(manager);
     }
 }

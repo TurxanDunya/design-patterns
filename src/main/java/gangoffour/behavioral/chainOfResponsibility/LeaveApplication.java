@@ -17,14 +17,15 @@ import java.time.temporal.ChronoUnit;
 public class LeaveApplication {
 
     //Why employee should leave company
-    public enum Type {SICK, PTO, LOP};
-    public enum Status {PENDING, APPROVED, REJECTED};
+    public enum Type {SICK, PTO, LOP}
 
-    private Type type;
-    private LocalDate from;
-    private LocalDate to;
+    public enum Status {PENDING, APPROVED, REJECTED}
+
+    private final Type type;
+    private final LocalDate from;
+    private final LocalDate to;
     private String processBy;
-    private Status status;
+    private final Status status;
 
     public LeaveApplication(Type type, LocalDate from, LocalDate to) {
         this.type = type;
