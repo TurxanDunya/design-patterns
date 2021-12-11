@@ -1,0 +1,7 @@
+WHAT IS INTERPRETER?
+Interpreter pattern is used to defines a grammatical representation for a language and
+provides an interpreter to deal with this grammar.
+
+In our example, we are creating an interface Expression and concrete classes implementing
+the Expression interface. A class TerminalExpression is defined which acts as a main interpreter
+and other classes OrExpression, AndExpression are used to create combinational expressions.

@@ -3,3 +3,12 @@ Turns a request into a stand-alone object that contains all information about th
 This transformation lets you pass requests as a method arguments,
 delay or queue a request’s execution, and support undoable operations.
 
+ADVANTAGES:
+1. Makes our code extensible as we can add new commands without changing existing code
+2. Reduces coupling the invoker and receiver of a command
+
+DISADVANTAGES:
+1. Increase in the number of classes for each individual command
+
+REAL LIFE EXAMPLES
+- java.lang.Runnable interface
