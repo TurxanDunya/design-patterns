@@ -1,6 +1,8 @@
 package gangoffour.behavioral.chainOfResponsibility;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
@@ -14,6 +16,7 @@ import java.time.temporal.ChronoUnit;
  * then request should be pass to next manager on the chain.
  */
 @Builder
+@AllArgsConstructor
 public class LeaveApplication {
 
     //Why employee should leave company
