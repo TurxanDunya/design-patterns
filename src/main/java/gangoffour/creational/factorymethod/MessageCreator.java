@@ -23,4 +23,5 @@ public abstract class MessageCreator {
 	
 	//Factory method. Subclasses will override it. The key point is here also
 	protected abstract Message createMessage();
+
 }

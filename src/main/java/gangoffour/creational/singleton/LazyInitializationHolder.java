@@ -7,16 +7,17 @@ package gangoffour.creational.singleton;
  */
 public class LazyInitializationHolder {
 
-    private LazyInitializationHolder() {
-        System.out.println("Constructor called only once for LazyInitializationHolder");
-    }
-
     // As soon as class loaded, static INSTANCE variable will be initialized
     private static class InitializationHolder {
         static LazyInitializationHolder INSTANCE = new LazyInitializationHolder();
     }
 
+    private LazyInitializationHolder() {
+        System.out.println("Constructor called only once for LazyInitializationHolder");
+    }
+
     public static LazyInitializationHolder getInstance() {
         return InitializationHolder.INSTANCE;
     }
+
 }
