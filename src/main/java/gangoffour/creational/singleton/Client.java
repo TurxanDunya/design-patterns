@@ -30,9 +30,10 @@ public class Client {
         System.out.println(lazyInitializationHolderInstanceOne == lazyInitializationHolderInstanceTwo);
 
         // SINGLETON ENUM
-        SingletonEnum singletonEnum = SingletonEnum.INSTANCE;
-        System.out.println(singletonEnum.getValue());
-        singletonEnum.setValue(2);
-        System.out.println(singletonEnum.getValue());
+        SingletonEnum singletonEnumOne = SingletonEnum.INSTANCE;
+        System.out.println(singletonEnumOne.getValue());
+        singletonEnumOne.setValue(2);
+        SingletonEnum singletonEnumTwo = SingletonEnum.INSTANCE;
+        System.out.println(singletonEnumTwo.getValue());
     }
 }
