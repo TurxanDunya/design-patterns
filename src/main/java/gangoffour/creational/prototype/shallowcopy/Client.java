@@ -30,8 +30,9 @@ public class Client {
         general.boostMorale();
         System.out.println(general);
 
-//        General generalCopy = (General) general.clone();
-//        System.out.println(generalCopy);
+        // This will throw CloneNotSupportedException
+        // General generalCopy = (General) general.clone();
+        // System.out.println(generalCopy);
     }
 
     // https://springframework.guru/gang-of-four-design-patterns/prototype-pattern/
