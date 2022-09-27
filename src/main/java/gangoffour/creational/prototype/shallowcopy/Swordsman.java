@@ -21,4 +21,5 @@ public class Swordsman extends GameUnit {
     protected void reset() {
         state = "idle";
     }
+
 }

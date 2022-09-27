@@ -26,4 +26,5 @@ public class General extends GameUnit {
     protected void reset() {
         throw new UnsupportedOperationException("Reset not supported");
     }
+
 }
