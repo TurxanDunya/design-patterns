@@ -7,7 +7,7 @@ public enum PlayerSide {
     TERRORIST(1),
     COUNTER_TERRORIST(2);
 
-    private int side;
+    private final int side;
 
     PlayerSide(int side) {
         this.side = side;

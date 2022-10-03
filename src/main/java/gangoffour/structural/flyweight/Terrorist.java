@@ -1,6 +1,8 @@
 package gangoffour.structural.flyweight;
 
-// Terrorist must have weapon and mission
+/**
+ * Terrorist must have weapon and mission, and it is flyweight object
+ */
 public class Terrorist implements Player {
 
     // Intrinsic Attribute, constant data set
@@ -9,6 +11,8 @@ public class Terrorist implements Player {
     // Extrinsic Attribute, data set from the outside
     private String weapon;
 
+    // A flyweight should initialize its intrinsic state just once, via constructor parameters.
+    // It shouldn’t expose any setters or public fields to other objects.
     public Terrorist() {
         TASK = "PLANT A BOMB";
     }

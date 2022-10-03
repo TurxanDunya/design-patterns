@@ -4,10 +4,10 @@ import java.util.Random;
 
 public class Client {
 
-    // Weapons (used by getRandWeapon(). Also we could create Enum class)
-    private static String[] weapons = {"AK-47", "Maverick", "Gut Knife", "Desert Eagle"};
+    // Weapons (used by getRandWeapon(). Also, we could create Enum class)
+    private static final String[] weapons = {"AK-47", "Maverick", "Gut Knife", "Desert Eagle"};
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         // Assume that we have a total of 10 players in the game.
         for (int i = 0; i < 10; i++) {
@@ -20,6 +20,7 @@ public class Client {
             // Send this player on a mission
             player.mission();
         }
+
     }
 
     // Utility methods to get a random player type and weapon
@@ -40,4 +41,5 @@ public class Client {
         // Return the weapon stored at index 'randInt'
         return weapons[randInt];
     }
+
 }
