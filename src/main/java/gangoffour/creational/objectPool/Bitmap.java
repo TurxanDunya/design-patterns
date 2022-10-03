@@ -5,7 +5,7 @@ public class Bitmap implements Image {
 
     private String location;
 
-    private String objectName;
+    private final String objectName;
 
     public Bitmap(String objectName) {
         this.objectName = objectName;

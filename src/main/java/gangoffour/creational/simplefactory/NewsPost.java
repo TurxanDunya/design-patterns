@@ -1,12 +1,12 @@
 package gangoffour.creational.simplefactory;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import java.time.LocalDate;
+import lombok.EqualsAndHashCode;
 
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode(callSuper = true)
 public class NewsPost extends Post {
 
     private String headLine;

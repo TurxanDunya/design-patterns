@@ -10,9 +10,9 @@ import java.util.function.Supplier;
 public class ObjectPool<T extends Poolable> {
 
     // Creates in memory cache
-    private BlockingQueue<T> availablePool;
+    private final BlockingQueue<T> availablePool;
 
-    // Supplier - is a functional interface and it has only one method called 'get()'. Get object of Bitmap
+    // Supplier - is a functional interface, and it has only one method called 'get()'. Get object of Bitmap
     // Count - how many objects must be created in pool
     public ObjectPool(Supplier<T> creator, int count) {
         availablePool = new LinkedBlockingQueue<>();

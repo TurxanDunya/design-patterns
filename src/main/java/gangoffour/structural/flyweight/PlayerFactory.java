@@ -6,7 +6,7 @@ import java.util.Map;
 // Class used to get a player using HashMap. Returns an existing player if a player of given type exists.
 // Else creates a new player and returns it.
 public class PlayerFactory {
-    private static Map<String, Player> playerMap = new HashMap<>();
+    private static final Map<String, Player> playerMap = new HashMap<>();
 
     // Method to get a player
     public static Player getPlayer(String playerSide) {

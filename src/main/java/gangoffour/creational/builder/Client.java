@@ -9,5 +9,7 @@ public class Client {
                 .lastName("Dunya")
                 .birthday(LocalDate.now())
                 .build();
+
+        System.out.println(user);
     }
 }
