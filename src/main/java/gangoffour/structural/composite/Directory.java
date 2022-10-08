@@ -8,20 +8,23 @@ import java.util.List;
  *
  * This composite class keeps all abstract class implementers children inside in.
  * And does some operations on them. So, Directory class composites all implementations.
+ *
+ * If you look carefully,
+ * you will notice there is both "is a" and "has a" relationship between Directory and File.
  */
 public class Directory extends File {
 
     // Keeps children list in itself
-    private List<File> children = new ArrayList<>();
+    private final List<File> children = new ArrayList<>();
 
     public Directory(String name) {
         super(name);
     }
 
     @Override
-    public void operation() {
+    public void changePath() {
         System.out.println(getName());
-        children.forEach(File::operation);
+        children.forEach(File::changePath);
     }
 
     @Override

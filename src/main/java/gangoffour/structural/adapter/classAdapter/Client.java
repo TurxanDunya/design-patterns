@@ -17,7 +17,7 @@ public class Client {
 
     // Just filling Employee's states
     public static void populateEmployeeData(Employee employee) {
-        employee.setFullName("Elliot Alderson");
+        employee.setFullName("Elliot Anderson");
         employee.setJobTitle("Security Engineer");
         employee.setOfficeLocation("New York");
     }

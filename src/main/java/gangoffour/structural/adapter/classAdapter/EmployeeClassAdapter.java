@@ -6,9 +6,9 @@ package gangoffour.structural.adapter.classAdapter;
  */
 public class EmployeeClassAdapter extends Employee implements Customer {
 
-    /*
-    If you noticed, our adapter has same features with Employee by extending it.
-    In the same time, our adapter implements Customer for providing Employee functionalities for it.
+    /**
+     * If you noticed, our adapter has same features with Employee by extending it.
+     * In the same time, our adapter implements Customer for providing Employee functionalities for it.
      */
 
     @Override
