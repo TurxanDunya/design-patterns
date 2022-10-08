@@ -6,16 +6,16 @@ package gangoffour.structural.composite;
  */
 public class BinaryFile extends File {
 
-    private long size;
+    private final String newPath;
 
-    public BinaryFile(String name, long size) {
+    public BinaryFile(String name, String newPath) {
         super(name);
-        this.size = size;
+        this.newPath = newPath;
     }
 
     @Override
-    public void operation() {
-        System.out.println(getName() + "\t" + size);
+    public void changePath() {
+        System.out.println(getName() + " changed to new path: " + newPath);
     }
 
     @Override
