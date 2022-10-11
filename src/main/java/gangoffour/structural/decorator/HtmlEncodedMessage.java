@@ -8,7 +8,7 @@ import org.apache.commons.lang3.StringEscapeUtils;
 public class HtmlEncodedMessage implements Message {
 
     // Notice that, in this case we injected Message interface for its functionalities
-    private Message message;
+    private final Message message;
 
     public HtmlEncodedMessage(Message message) {
         this.message = message;

@@ -1,6 +1,6 @@
 package gangoffour.creational.prototype.copyThroughSerialization;
 
-import org.springframework.util.SerializationUtils;
+import org.apache.commons.lang3.SerializationUtils;
 
 /**
  * when our fields is much more, then this mechanism is more powerful

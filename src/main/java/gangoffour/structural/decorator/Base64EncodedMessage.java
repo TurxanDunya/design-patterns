@@ -8,7 +8,7 @@ import java.util.Base64;
 public class Base64EncodedMessage implements Message {
 
     // Notice that, in this case we injected Message interface for its functionalities
-    private Message message;
+    private final Message message;
 
     public Base64EncodedMessage(Message message) {
         this.message = message;
