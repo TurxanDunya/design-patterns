@@ -6,7 +6,7 @@ package gangoffour.structural.decorator;
 public class TextMessage implements Message {
 
     // Notice that, it is just a String since it is the main functional class.
-    private String message;
+    private final String message;
 
     public TextMessage(String message) {
         this.message = message;

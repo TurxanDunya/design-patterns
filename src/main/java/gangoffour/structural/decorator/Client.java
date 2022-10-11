@@ -2,11 +2,16 @@ package gangoffour.structural.decorator;
 
 public class Client {
     public static void main(String[] args) {
-        // Simple plain java
+        /*
+         * TextMessage is just a simple object. We just create it.
+         * And instead of "HtmlEncodedMessage extends TextMessage" relation, we use "has a" relation.
+         */
         Message m = new TextMessage("The <FORCE> is strong with this one!");
         System.out.println(m.getContent());
 
-        // HTML4 as text
+        /*
+         * And look at it. We sent our base object to decorator to decorate it.
+         */
         Message decorator = new HtmlEncodedMessage(m);
         System.out.println(decorator.getContent());
 
