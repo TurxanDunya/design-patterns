@@ -1,20 +1,22 @@
 package gangoffour.behavioral.command;
 
+import gangoffour.behavioral.command.commands.Command;
+
 /**
  * A Simple remote control with one button.
- * We simply put the light control inside of remote control.
+ * We simply put the light control inside remote control.
  *
- * Notice that the remote control doesn’t know anything about turning on or off the light.
+ * Notice that the remote control does not know anything about turning on or off the light.
  * That information is contained in a separate command object. This reduces the coupling between them.
  */
 public class SimpleRemoteControl {
 
     // Only one button
-    Command slot;
+    private Command slot;
 
     public void setCommand(Command command) {
         // Set the command the remote will execute
-        slot = command;
+        this.slot = command;
     }
 
     public void pressButton() {
