@@ -28,6 +28,7 @@ public class Publisher implements Publication {
         subscribers.remove(subscriber);
     }
 
+    // Will iterate subscribers and call their method
     @Override
     public void publish(String date) {
         name = name + " in " + date;
