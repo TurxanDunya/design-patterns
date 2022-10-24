@@ -5,6 +5,7 @@ import lombok.Builder;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import lombok.ToString;
 
 /**
  * It accepts requests and forwarding it to chain.
@@ -14,11 +15,12 @@ import java.time.temporal.ChronoUnit;
  * If first manager doesn't have responsibility like that,
  * then request should be pass to next manager on the chain.
  */
+@ToString
 @Builder
 @AllArgsConstructor
-public class LeaveApplication {
+public class DismissalApplication {
 
-    //Why employee should leave company
+    // Why employee should leave company
     public enum Type {SICK, PTO, LOP}
 
     public enum Status {PENDING, APPROVED, REJECTED}
@@ -29,7 +31,7 @@ public class LeaveApplication {
     private String processBy;
     private final Status status;
 
-    public LeaveApplication(Type type, LocalDate from, LocalDate to) {
+    public DismissalApplication(Type type, LocalDate from, LocalDate to) {
         this.type = type;
         this.from = from;
         this.to = to;
