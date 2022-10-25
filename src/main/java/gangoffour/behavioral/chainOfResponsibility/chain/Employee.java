@@ -19,6 +19,8 @@ public abstract class Employee implements DismissalApprover {
         this.successor = successor;
     }
 
+    // Important part.
+    // If process is fail and the next successor is available, process will move to next chain.
     @Override
     public void processDismissApplication(DismissalApplication application) {
         if (!processRequest(application) && successor != null) {
