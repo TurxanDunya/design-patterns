@@ -1,5 +1,6 @@
-package gangoffour.structural.composite;
+package gangoffour.structural.composite.composite;
 
+import gangoffour.structural.composite.File;
 import java.util.ArrayList;
 import java.util.List;
 

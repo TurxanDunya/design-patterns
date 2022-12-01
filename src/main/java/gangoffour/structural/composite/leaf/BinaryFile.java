@@ -1,4 +1,6 @@
-package gangoffour.structural.composite;
+package gangoffour.structural.composite.leaf;
+
+import gangoffour.structural.composite.File;
 
 /**
  * LEAF node in composite pattern.

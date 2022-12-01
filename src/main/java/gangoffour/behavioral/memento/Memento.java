@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Memento can also be a inner class in Originator
+ * Memento can also be an inner class in Originator
  */
 public class Memento {
 

@@ -1,4 +1,4 @@
-package gangoffour.structural.flyweight;
+package gangoffour.structural.flyweight.player;
 
 /**
  * Interface implemented by Flyweights

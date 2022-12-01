@@ -1,4 +1,4 @@
-package gangoffour.structural.facade.internalstructure;
+package gangoffour.structural.facade.internalsystem;
 
 import java.util.Arrays;
 

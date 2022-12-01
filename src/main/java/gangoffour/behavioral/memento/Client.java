@@ -3,11 +3,10 @@ package gangoffour.behavioral.memento;
 public class Client {
 
     private static Originator originator;
-    private static Memento memento;
 
     public static void main(String[] args) {
         originator = new Originator("state-0");
-        memento = originator.getMemento();
+        Memento memento = originator.getMemento();
 
         OriginatorTrigger trigger = new OriginatorTrigger();
         trigger.start();

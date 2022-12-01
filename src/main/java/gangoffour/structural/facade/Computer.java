@@ -1,15 +1,15 @@
 package gangoffour.structural.facade;
 
-import gangoffour.structural.facade.internalstructure.Cpu;
-import gangoffour.structural.facade.internalstructure.Gpu;
-import gangoffour.structural.facade.internalstructure.Ram;
+import gangoffour.structural.facade.internalsystem.Cpu;
+import gangoffour.structural.facade.internalsystem.Gpu;
+import gangoffour.structural.facade.internalsystem.Ram;
 
 /**
  * Computer is facade.
  */
 public class Computer {
 
-    private static final byte[] data = new byte[]{12, 34, 2, 5, 32};
+    private static final byte[] data = new byte[] {12, 34, 2, 5, 32};
 
     private final Ram ram = new Ram();
     private final Cpu cpu = new Cpu();
