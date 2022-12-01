@@ -1,5 +1,8 @@
 package gangoffour.structural.composite;
 
+import gangoffour.structural.composite.composite.Directory;
+import gangoffour.structural.composite.leaf.BinaryFile;
+
 public class Client {
 
     // You can use which way you will create your tree. You can use composite or simple implementation.

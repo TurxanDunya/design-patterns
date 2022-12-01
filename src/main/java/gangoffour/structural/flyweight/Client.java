@@ -1,5 +1,6 @@
 package gangoffour.structural.flyweight;
 
+import gangoffour.structural.flyweight.player.Player;
 import java.util.Random;
 
 public class Client {
@@ -10,6 +11,8 @@ public class Client {
     public static void main(String[] args) {
 
         // Assume that we have a total of 10 players in the game.
+        // We do not create 10 separate object.
+        // Instead, we use already exist one and just change their extrinsic state.
         for (int i = 0; i < 10; i++) {
             // getPlayer() is called simply using the class name since the method is a static one
             Player player = PlayerFactory.getPlayer(getRandomPlayerType());

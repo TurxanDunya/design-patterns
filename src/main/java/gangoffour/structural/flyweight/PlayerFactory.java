@@ -1,5 +1,8 @@
 package gangoffour.structural.flyweight;
 
+import gangoffour.structural.flyweight.player.CounterTerrorist;
+import gangoffour.structural.flyweight.player.Player;
+import gangoffour.structural.flyweight.player.Terrorist;
 import java.util.HashMap;
 import java.util.Map;
 

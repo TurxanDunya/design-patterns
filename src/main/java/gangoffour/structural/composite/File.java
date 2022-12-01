@@ -5,7 +5,7 @@ import lombok.Data;
 
 /**
  * The component base class for composite pattern defines operations applicable both leaf & composite.
- * Composite uses this interface to reach its leafs. Also clients use this class
+ * Composite uses this interface to reach its leafs. Also, clients use this class
  */
 @Data
 @AllArgsConstructor

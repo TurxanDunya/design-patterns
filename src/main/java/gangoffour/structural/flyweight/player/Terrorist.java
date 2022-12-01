@@ -1,9 +1,9 @@
-package gangoffour.structural.flyweight;
+package gangoffour.structural.flyweight.player;
 
 /**
- *  CounterTerrorist must have weapon and mission, and it is flyweight object
-  */
-public class CounterTerrorist implements Player {
+ * Terrorist must have weapon and mission, and it is flyweight object
+ */
+public class Terrorist implements Player {
 
     // Intrinsic Attribute, constant data set
     private final String TASK;
@@ -13,8 +13,8 @@ public class CounterTerrorist implements Player {
 
     // A flyweight should initialize its intrinsic state just once, via constructor parameters.
     // It shouldn’t expose any setters or public fields to other objects.
-    public CounterTerrorist() {
-        TASK = "DIFFUSE BOMB";
+    public Terrorist() {
+        TASK = "PLANT A BOMB";
     }
 
     public void assignWeapon(String weapon) {
@@ -24,7 +24,7 @@ public class CounterTerrorist implements Player {
 
     public void mission() {
         // Work on the Mission
-        System.out.println("Counter Terrorist with weapon " + weapon + "|" + " Task is " + TASK);
+        System.out.println("Terrorist with weapon " + weapon + "|" + " Task is " + TASK);
     }
 
 }

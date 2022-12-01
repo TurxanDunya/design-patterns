@@ -1,5 +1,8 @@
 package gangoffour.structural.decorator;
 
+import gangoffour.structural.decorator.decorators.Base64EncodedMessage;
+import gangoffour.structural.decorator.decorators.HtmlEncodedMessage;
+
 public class Client {
     public static void main(String[] args) {
         /*

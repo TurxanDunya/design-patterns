@@ -1,5 +1,6 @@
-package gangoffour.structural.decorator;
+package gangoffour.structural.decorator.decorators;
 
+import gangoffour.structural.decorator.Message;
 import org.apache.commons.lang3.StringEscapeUtils;
 
 /**
