@@ -1,0 +1,2 @@
+Skeletal implementation is a design by which
+we can use the benefits of the interface and abstract class together.
